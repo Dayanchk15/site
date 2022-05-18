@@ -111,7 +111,7 @@ a{
 	padding: 5%;
 	color: rgb(95, 95, 95);
 	letter-spacing: 1px;
-	font-size: 18px;
+	font-size: 20px;
 	/*box-shadow: 0 0 5px black;*/
 	
 }
@@ -140,20 +140,11 @@ hr{
 	.logo_name{
 		top: 1%;
 	}
-	.img{
-		height: 40%;
-		width: 90%;
-		top: 12%;
-	}
 	.middle{
 		margin: 30% auto;
 		height: 90%;
 		left: 15%;
-	}
-	.table{
-		top: 60%;
-		left: 7%;
-
+		font-size: 15px;
 	}
 	.text{
 		left: 85%;
@@ -178,4 +169,60 @@ hr{
 	.top_menu_link{
 		display: none;
 	}
+}
+
+
+@media (min-width: 326px) and (max-width: 390px){
+	body{
+		overflow-x: hide;
+	}
+
+	.link{
+		position: absolute;
+		left: 5%;
+	}
+	.top-menu{
+		width: 100%;
+	}
+	.logo_name{
+		top: 1%;
+	}
+	
+	.middle{
+		margin: 30% auto;
+		height: 90%;
+		left: 15%;
+		font-size: 15px;
+	}
+	.text{
+		left: 85%;
+		top: 30%;
+		font-size: 25px;
+	}
+	.menu_active{
+		position: fixed;
+		height: 7%;
+		top: 81px;
+		left: 0;
+		background: rgb(0, 0, 0);
+		box-shadow: 0 0 10px black;
+		width: 100%;
+		margin: 1px auto;
+		visibility: visible;
+		z-index: 11;
+}
+	.text{
+		display: block;
+	}
+	.top_menu_link{
+		display: none;
+	}
+
+	.menu_link{
+		font-size: 15px;
+		font-family: sans-serif;
+		letter-spacing: 0px; /*расст. межд. буквами*/
+		color: white;
+		padding: 5px;
+}
 }
